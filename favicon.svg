@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0c0d10" />
+  <path d="M 32 10 L 16 18 L 12 36 L 22 48 L 32 58 L 42 48 L 52 36 L 48 18 Z" 
+        stroke="#dfba73" stroke-width="2" fill="none" />
+  <!-- Bowtie -->
+  <path d="M 32 26 L 24 22 L 24 30 Z" fill="#dfba73" />
+  <path d="M 32 26 L 40 22 L 40 30 Z" fill="#dfba73" />
+  <circle cx="32" cy="26" r="2" fill="#fff" />
+  <circle cx="32" cy="36" r="1.5" fill="#dfba73" />
+  <circle cx="32" cy="44" r="1.5" fill="#dfba73" />
+</svg>

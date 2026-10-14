@@ -1,0 +1,25 @@
+{
+  "name": "kiswa-coming-soon",
+  "version": "1.0.0",
+  "description": "KISWA Designer Studio - Minimalist Luxury Coming Soon Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.13.0",
+    "vite": "^5.4.2"
+  },
+  "keywords": [
+    "kiswa",
+    "luxury",
+    "bespoke",
+    "tailoring",
+    "coming-soon",
+    "countdown"
+  ],
+  "author": "KISWA Designer Studio",
+  "license": "MIT"
+}

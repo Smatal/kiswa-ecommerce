@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KISWA Designer Studio - Tailored for a greater you. Bespoke luxury suits, sherwanis, and artisanal tailoring. Coming soon." />
+  <meta name="theme-color" content="#08080a" />
+  <meta property="og:title" content="KISWA Designer Studio | Coming Soon" />
+  <meta property="og:description" content="Your vision. Our craft. A finer you. Bespoke haute couture & tailoring experience arriving soon." />
+  <meta property="og:image" content="assets/images/atelier-bg.jpg" />
+  <title>KISWA Designer Studio — Tailored for a Greater You | Coming Soon</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts: Cormorant Garamond (luxury serif), Montserrat (clean geometric sans), Alex Brush (script signature) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Atmospheric Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Background Atelier Backdrop with Dark Vignette -->
+  <div class="atelier-backdrop" aria-hidden="true">
+    <div class="backdrop-image"></div>
+    <div class="backdrop-gradient"></div>
+    <div class="backdrop-grain"></div>
+  </div>
+
+  <!-- Page Layout Wrapper -->
+  <div class="site-wrapper">
+
+    <!-- Top Navigation Header -->
+    <header class="site-header" id="main-header">
+      <div class="header-inner">
+        <!-- Brand Logo Lockup -->
+        <a href="#hero" class="brand-link" aria-label="KISWA Designer Studio Home">
+          <div class="brand-crest-wrapper">
+            <img src="assets/images/logo.svg" alt="KISWA Crest" class="brand-crest" width="38" height="38" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">KISWA</span>
+            <span class="brand-sub">DESIGNER STUDIO</span>
+          </div>
+        </a>
+
+        <!-- Header Actions -->
+        <nav class="header-nav" aria-label="Quick Actions">
+          <button type="button" class="nav-action-btn" id="open-philosophy-btn" aria-haspopup="dialog" aria-expanded="false" title="Explore Our Bespoke Process">
+            <span class="btn-icon">✦</span>
+            <span class="btn-text">Our Craft</span>
+          </button>
+          <a href="https://wa.me/?text=Hello%20KISWA%20Designer%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20a%20bespoke%20appointment." target="_blank" rel="noopener noreferrer" class="nav-action-btn concierge-btn" id="header-concierge-link" title="Private WhatsApp Concierge">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            <span class="btn-text">Concierge</span>
+          </a>
+          <button type="button" class="sound-toggle-btn" id="sound-toggle-btn" aria-label="Toggle ambient luxury sound" title="Ambient Sound">
+            <svg class="sound-icon sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <line x1="23" y1="9" x2="17" y2="15"></line>
+              <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+            <svg class="sound-icon sound-on hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="main-content">
+      <section class="hero-section" id="hero" aria-label="Coming Soon Countdown">
+        <div class="hero-container">
+
+          <!-- Eyebrow Badge -->
+          <div class="hero-badge-wrap">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span class="badge-text">ATELIER DIGITAL FLAGSHIP • ARRIVING SOON</span>
+            </div>
+          </div>
+
+          <!-- Hero Brand Title & Motto -->
+          <div class="hero-heading-block">
+            <p class="hero-super-title">TAILORED FOR A GREATER YOU</p>
+            <h1 class="hero-main-title">
+              Your Vision.<br class="mobile-break" />
+              Our Craft.<br />
+              <span class="gold-gradient-text">A Finer You.</span>
+            </h1>
+            <p class="hero-description">
+              At KISWA, clothing should never simply fit your body — it should feel like it belongs to your story.
+              We are carefully tailoring our exclusive digital couture experience.
+            </p>
+          </div>
+
+          <!-- Minimalist Luxury Countdown Timer -->
+          <div class="countdown-wrapper" id="countdown-wrapper" aria-label="Grand Opening Countdown" role="timer">
+            <div class="countdown-header">
+              <span class="line-decorator"></span>
+              <span class="countdown-title">GRAND UNVEILING COUNTDOWN</span>
+              <span class="line-decorator"></span>
+            </div>
+
+            <div class="countdown-grid">
+              <!-- Days -->
+              <div class="time-card" id="time-card-days">
+                <div class="time-card-inner">
+                  <div class="time-card-value" id="timer-days">24</div>
+                  <div class="time-card-label">DAYS</div>
+                </div>
+                <div class="card-accent-border"></div>
+              </div>
+
+              <div class="time-separator" aria-hidden="true">:</div>
+
+              <!-- Hours -->
+              <div class="time-card" id="time-card-hours">
+                <div class="time-card-inner">
+                  <div class="time-card-value" id="timer-hours">18</div>
+                  <div class="time-card-label">HOURS</div>
+                </div>
+                <div class="card-accent-border"></div>
+              </div>
+
+              <div class="time-separator" aria-hidden="true">:</div>
+
+              <!-- Minutes -->
+              <div class="time-card" id="time-card-minutes">
+                <div class="time-card-inner">
+                  <div class="time-card-value" id="timer-minutes">42</div>
+                  <div class="time-card-label">MINUTES</div>
+                </div>
+                <div class="card-accent-border"></div>
+              </div>
+
+              <div class="time-separator" aria-hidden="true">:</div>
+
+              <!-- Seconds -->
+              <div class="time-card" id="time-card-seconds">
+                <div class="time-card-inner">
+                  <div class="time-card-value" id="timer-seconds">50</div>
+                  <div class="time-card-label">SECONDS</div>
+                </div>
+                <div class="card-accent-border"></div>
+              </div>
+            </div>
+            <p class="countdown-note">Private previews opening to registered guests first.</p>
+          </div>
+
+          <!-- VIP Early Access Subscription Form -->
+          <div class="subscribe-container" id="subscribe-container">
+            <div class="subscribe-card">
+              <div class="subscribe-header">
+                <h2 class="subscribe-title">Request Private Preview Access</h2>
+                <p class="subscribe-subtitle">Join the private circle to receive VIP early access, bespoke lookbooks, and priority atelier fittings.</p>
+              </div>
+
+              <form class="subscribe-form" id="vip-subscribe-form" novalidate>
+                <div class="form-input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                  <input
+                    type="email"
+                    id="vip-email-input"
+                    class="vip-email-input"
+                    placeholder="Enter your private email address..."
+                    aria-label="Private email address"
+                    required
+                    autocomplete="email"
+                  />
+                  <button type="submit" class="submit-btn" id="vip-submit-btn">
+                    <span class="btn-text">Request Access</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                    <span class="spinner-loader hidden" id="submit-spinner" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+              </form>
+
+              <!-- Trust Reassurance -->
+              <div class="trust-pills">
+                <span class="trust-item">
+                  <span class="pill-bullet">✦</span> Limited Atelier Allocations
+                </span>
+                <span class="trust-item">
+                  <span class="pill-bullet">✦</span> Strictly Confidential
+                </span>
+                <span class="trust-item">
+                  <span class="pill-bullet">✦</span> Bespoke Sartorial Standards
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Craft Teaser Quick Bar -->
+          <div class="craft-quick-bar">
+            <button type="button" class="craft-bar-card" id="craft-quick-trigger" aria-label="Open craft breakdown">
+              <div class="craft-bar-left">
+                <span class="craft-gold-tag">THE 5-STEP JOURNEY</span>
+                <h3 class="craft-bar-title">Listen • Guide • Measure • Craft • Deliver</h3>
+              </div>
+              <div class="craft-bar-right">
+                <span class="explore-prompt">Explore Craft Philosophy</span>
+                <span class="arrow-circle">→</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Signature Brand Quote -->
+          <div class="signature-quote-block">
+            <blockquote class="signature-quote">
+              “Because every moment in your life deserves a finer you.”
+            </blockquote>
+            <cite class="signature-cite">— KISWA DESIGNER STUDIO</cite>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-inner">
+        <!-- Left: Studio Details -->
+        <div class="footer-col brand-col">
+          <div class="footer-logo-row">
+            <img src="assets/images/logo.svg" alt="KISWA" width="24" height="24" />
+            <span class="footer-brand-name">KISWA</span>
+          </div>
+          <p class="footer-tagline">More than clothing. A part of your story.</p>
+        </div>
+
+        <!-- Center: Private Inquiries -->
+        <div class="footer-col concierge-col">
+          <p class="footer-label">PRIVATE BESPOKE INQUIRIES</p>
+          <a href="mailto:atelier@kiswastudio.com" class="footer-link-highlight" id="footer-email-link">atelier@kiswastudio.com</a>
+          <span class="footer-subtext">By appointment only</span>
+        </div>
+
+        <!-- Right: Social & Status -->
+        <div class="footer-col social-col">
+          <p class="footer-label">STAY CONNECTED</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow KISWA on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/?text=Hello%20KISWA%20Designer%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20a%20bespoke%20appointment." target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Chat with KISWA Concierge on WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <button type="button" class="social-btn share-trigger" id="share-link-btn" aria-label="Share Link" title="Copy Website Link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+            </button>
+          </div>
+          <span class="copyright-text">© 2026 KISWA Designer Studio. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- CRAFT PHILOSOPHY SLIDE-OVER DRAWER / MODAL -->
+  <div class="philosophy-modal-backdrop" id="philosophy-backdrop" aria-hidden="true">
+    <div class="philosophy-drawer" id="philosophy-drawer" role="dialog" aria-modal="true" aria-labelledby="philosophy-title">
+      
+      <!-- Drawer Header -->
+      <div class="drawer-header">
+        <div class="drawer-header-brand">
+          <img src="assets/images/logo.svg" alt="" width="26" height="26" aria-hidden="true" />
+          <span class="drawer-brand-text">KISWA PHILOSOPHY</span>
+        </div>
+        <button type="button" class="drawer-close-btn" id="close-philosophy-btn" aria-label="Close craft drawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Drawer Content -->
+      <div class="drawer-body">
+        
+        <!-- Hero Teaser in Drawer -->
+        <div class="drawer-intro">
+          <h2 id="philosophy-title" class="drawer-main-title">More than clothing. A part of your story.</h2>
+          <p class="drawer-intro-text">
+            At KISWA, we believe clothing should never simply fit your body. It should feel like it belongs to you. Every customer has a story: a wedding, a milestone, a celebration imagined for years. That is why we don't begin with a garment. We begin with you.
+          </p>
+        </div>
+
+        <!-- Craft Detail Imagery -->
+        <div class="drawer-craft-image-wrap">
+          <img src="assets/images/craft-detail.jpg" alt="Artisan master tailor hand-stitching bespoke suit jacket with golden thread" class="drawer-craft-img" loading="lazy" />
+          <div class="craft-img-overlay">
+            <span class="craft-tag">ARTISANAL HERITAGE</span>
+            <p class="craft-caption">Every stitch carries our unwavering commitment to sartorial perfection.</p>
+          </div>
+        </div>
+
+        <!-- The 5 Craft Pillars from the original brand flyer -->
+        <div class="craft-steps-list">
+          
+          <!-- Step 1 -->
+          <article class="craft-step-card">
+            <div class="step-num-badge">01</div>
+            <div class="step-content">
+              <div class="step-header-row">
+                <span class="step-icon">☕</span>
+                <h3 class="step-title">WE LISTEN</h3>
+              </div>
+              <p class="step-desc">
+                We take the time to understand your needs, preferences, and occasions, so the final outfit truly feels like you.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 2 -->
+          <article class="craft-step-card">
+            <div class="step-num-badge">02</div>
+            <div class="step-content">
+              <div class="step-header-row">
+                <span class="step-icon">🧵</span>
+                <h3 class="step-title">WE GUIDE</h3>
+              </div>
+              <p class="step-desc">
+                With a curated selection of premium fabrics and styles, we help you explore options that match your personality and occasion.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 3 -->
+          <article class="craft-step-card">
+            <div class="step-num-badge">03</div>
+            <div class="step-content">
+              <div class="step-header-row">
+                <span class="step-icon">📏</span>
+                <h3 class="step-title">WE MEASURE</h3>
+              </div>
+              <p class="step-desc">
+                Our experts take precise measurements to ensure a fit that feels natural, comfortable, and confident.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 4 -->
+          <article class="craft-step-card">
+            <div class="step-num-badge">04</div>
+            <div class="step-content">
+              <div class="step-header-row">
+                <span class="step-icon">✂️</span>
+                <h3 class="step-title">WE CRAFT</h3>
+              </div>
+              <p class="step-desc">
+                Your outfit is crafted by skilled artisans with attention to detail, ensuring the highest quality in every stitch.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 5 -->
+          <article class="craft-step-card">
+            <div class="step-num-badge">05</div>
+            <div class="step-content">
+              <div class="step-header-row">
+                <span class="step-icon">📦</span>
+                <h3 class="step-title">WE DELIVER</h3>
+              </div>
+              <p class="step-desc">
+                Your perfect outfit is delivered to your doorstep with final fittings, so you can step into your special moment with confidence.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Quote in Drawer -->
+        <div class="drawer-quote-wrap">
+          <p class="drawer-quote">“Because every moment in your life deserves a finer you.”</p>
+          <a href="https://wa.me/?text=Hello%20KISWA%20Designer%20Studio%2C%20I%20would%20like%20to%20schedule%20a%20private%20fitting%20consultation." target="_blank" rel="noopener noreferrer" class="drawer-cta-btn" id="drawer-whatsapp-btn">
+            Schedule Private Consultation
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <div class="toast-inner">
+      <div class="toast-crest">✦</div>
+      <div class="toast-body">
+        <h4 class="toast-title" id="toast-title">Invitation Confirmed</h4>
+        <p class="toast-desc" id="toast-desc">You are on the VIP preview register.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
